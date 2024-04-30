@@ -1,0 +1,53 @@
+{
+    "name": "harikrishnan1819/bug-atlas",
+    "description": "A Basic Package",
+    "keywords": [
+        "sparkouttech",
+        "bug-atlas"
+    ],
+    "homepage": "https://github.com/sparkouttech/bug-atlas",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Sparkout",
+            "email": "developer@sparkouttech.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^7.4|^8.0|^8.1|^8.2|^8.3",
+        "laravelista/lumen-vendor-publish": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sparkouttech\\BugAtlas\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sparkouttech\\BugAtlas\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },"config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                
+            ],
+            "aliases": {
+                "BugAtlas": "Sparkouttech\\BugAtlas\\BugAtlasFacade"
+            }
+        }
+    }
+    
+
+}
